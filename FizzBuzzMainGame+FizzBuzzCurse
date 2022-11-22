@@ -1,0 +1,49 @@
+# Fizz Buzz Minigames
+
+def MainGame():
+
+    maininput = int(input("Enter a multiple"))
+
+    for maininput in range(1,200):
+        string = ""
+        print(maininput)
+        if maininput % 3 == 0:
+            string = string + "Fizz"
+        if maininput % 5 == 0:
+            string = string + "Buzz"
+        if maininput % 5 != 0 and maininput % 3 != 0:
+            string + string + str(maininput)
+        print(string)
+
+def FizzBuzzCurse():
+
+    sideint = int(input("Enter a multiple"))
+    x = int(input("Select an iteration (has to be an integer"))
+
+    for sideint in range(1,x):
+        string = ""
+        print(sideint)
+        if sideint % 3 == 0:
+            string = string + "Fizz"
+        if sideint % 5 == 0:
+            string = string + "Buzz"
+        if sideint % 5 != 0 and sideint % 3 != 0:
+            string + string + str(sideint)
+        print(string)
+              
+def Menu():
+
+    print("Welcome to Fizz Buzz")
+
+    q = input("Select a gamemode, MainGame or FizzBuzzCurse")
+
+    if q == "MainGame":
+        MainGame()
+    elif q == "FizzBuzzCurse":
+        FizzBuzzCurse()
+    else:
+        print("Invalid option, try again from MainGame or FizzBuzzCurse")
+
+Menu()
+
+# End of Program
